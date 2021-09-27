@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#141720"
+    tools:context=".CreateCard">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Details"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"/>
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:textSize="22sp"
+
+        android:background="@drawable/bt_back"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/create_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Priority"
+        android:textSize="22sp"
+        android:padding="15dp"
+        android:background="@drawable/bt_back"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/save_button"
+        android:layout_width="110dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#5981EA"
+        android:text="Save">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
